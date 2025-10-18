@@ -101,8 +101,6 @@ DEVICE=cuda  # or cpu
 CLIENT_URL=https://<your-lovable-app>.com
 
 
-
-
 ## 🧰 Tech Stack
 
 - 🐍 **Python**, **PyTorch**, **Transformers**
