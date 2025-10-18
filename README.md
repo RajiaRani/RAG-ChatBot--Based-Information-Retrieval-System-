@@ -103,30 +103,29 @@ CLIENT_URL=https://<your-lovable-app>.com
 
 
 
-🧰 Tech Stack
+## 🧰 Tech Stack
 
-🐍 Python, PyTorch, Transformers
+- 🐍 **Python**, **PyTorch**, **Transformers**
+- 🧮 **FAISS / Chroma / Supabase (pgvector)**
+- 🧠 **OpenAI** (Embeddings)
+- 🤗 **Hugging Face Models** (LLMs)
+- ⚙️ **Streamlit / Flask** (UI)
+- ☁️ **Google Cloud + Supabase**
+- 💻 **Lovable Frontend** *(coming soon)*
 
-🧮 FAISS / Chroma / Supabase (pgvector)
+---
 
-🧠 OpenAI (Embeddings)
+## 🚀 Quickstart
 
-🤗 Hugging Face Models (LLMs)
+> **Requirements:** Python 3.10+, GPU optional but recommended
 
-⚙️ Streamlit / Flask (UI)
-
-☁️ Google Cloud + Supabase
-
-💻 Lovable Frontend (coming soon)
-
-
-
+```bash
 # 1️⃣ Clone repository
 git clone https://github.com/<your-username>/RAG-ChatBot--Based-Information-Retrieval-System.git
 cd RAG-ChatBot--Based-Information-Retrieval-System
 
 # 2️⃣ Create virtual environment
-python -m venv .venv && source .venv/bin/activate  # (Windows: .venv\Scripts\activate)
+python -m venv .venv && source .venv/bin/activate   # (Windows: .venv\Scripts\activate)
 
 # 3️⃣ Install dependencies
 pip install -r requirements.txt
@@ -135,9 +134,8 @@ pip install -r requirements.txt
 mkdir -p data && cp /path/to/your.pdf data/
 
 # 5️⃣ Run locally
-streamlit run app.py   # Streamlit UI
+streamlit run app.py        # Streamlit UI
 # or
-python app.py          # Flask backend
+python app.py               # Flask backend
 # or
-jupyter lab            # Notebook version
-
+jupyter lab                 # Notebook version
