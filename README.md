@@ -97,7 +97,7 @@ GEN_MODEL_ID=TheBloke/Mistral-7B-Instruct-GGUF
 DEVICE=cuda  # or cpu
 
 # CORS / Frontend
-CLIENT_URL=https://<your-lovable-app>.com
+`CLIENT_URL=https://<your-lovable-app>.com`
 
 ---
 
