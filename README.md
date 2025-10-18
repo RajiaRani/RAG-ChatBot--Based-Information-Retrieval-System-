@@ -100,6 +100,7 @@ DEVICE=cuda  # or cpu
 # CORS / Frontend
 CLIENT_URL=https://<your-lovable-app>.com
 
+---
 
 ## 🧰 Tech Stack
 
