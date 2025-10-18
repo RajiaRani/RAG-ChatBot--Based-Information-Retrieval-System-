@@ -51,7 +51,6 @@ The RAG pipeline follows a modular design connecting document ingestion, embeddi
 7️⃣ Citation + source display in UI
 
 ---
-
 ## ☁️ Deployment & Infrastructure
 
 This project runs on **Google Cloud**, with embeddings powered by **OpenAI**, models from **Hugging Face**, and backend storage via **Supabase**.  
