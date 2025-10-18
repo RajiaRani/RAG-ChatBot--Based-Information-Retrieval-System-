@@ -35,6 +35,52 @@ Unlike using frameworks (LangChain/LlamaIndex), this repo **builds each piece fr
 
 **RAG Flow**
 1) **Ingest & Chunk** → 2) **Embed** → 3) **Index** → 4) **Retrieve** → 5) **Augment Prompt** → 6) **Generate + Cite**
+## ☁️ Deployment & Infrastructure
+
+This project currently runs on **Google Cloud** with embeddings powered by **OpenAI** and models/resources from **Hugging Face**.  
+**Supabase** is used for auth, storage, and optionally vector DB. The frontend is being built with **Lovable** (shipping soon).
+
+### Stack at a Glance
+- **Compute:** Google Cloud (Compute Engine / Cloud Run)
+- **Vector DB:** Supabase pgvector (or FAISS/Chroma locally)
+- **Auth/DB/Storage:** Supabase
+- **Embeddings:** OpenAI Embeddings API
+- **LLMs / Models:** Hugging Face (Transformers / GGUF as applicable)
+- **Frontend:** Lovable (in progress; production link coming soon)
+
+---
+
+## 🔑 Services & Keys
+
+Create a `.env` file at the project root:
+
+```ini
+# Core
+ENV=production
+PORT=5000
+
+# OpenAI (used for embeddings)
+OPENAI_API_KEY=sk-...
+
+# Hugging Face (optional for gated models or rate limits)
+HUGGINGFACEHUB_API_TOKEN=hf_...
+
+# Supabase
+SUPABASE_URL=https://<your-project>.supabase.co
+SUPABASE_ANON_KEY=eyJhbGciOi...
+SUPABASE_SERVICE_ROLE_KEY= # keep server-side only; never expose to frontend
+
+# Vector store choice: faiss | chroma | supabase
+VECTOR_STORE=supabase
+
+# Model & device
+EMBED_MODEL=text-embedding-3-large           # or text-embedding-3-small
+GEN_MODEL_ID=TheBloke/Mistral-7B-Instruct-GGUF  # or HF Transformers model id
+DEVICE=cuda                                   # or cpu
+
+# CORS / Frontend
+CLIENT_URL=https://<your-lovable-app>.com
+
 
 ---
 
