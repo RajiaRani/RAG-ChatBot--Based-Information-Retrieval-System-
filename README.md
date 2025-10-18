@@ -74,14 +74,20 @@ streamlit run app.py
 
 
 
-🧠 What I Learned (Course Outcomes)
+## 🧠 What I Learned (Course Outcomes)
 
-Create/run a local RAG pipeline from scratch
+- ✅ **Create and run a local RAG pipeline from scratch**  
+  Learned how to design and execute an end-to-end Retrieval-Augmented Generation system entirely on local hardware.
 
-Implement chunking (fixed/semantic/structural)
+- ✅ **Implement chunking (Fixed / Semantic / Structural)**  
+  Explored multiple text-splitting methods to optimize document embedding and retrieval efficiency.
 
-Build vector search & retrieval scoring
+- ✅ **Build vector search & retrieval scoring**  
+  Understood similarity search concepts using cosine distance and integrated FAISS/Chroma for high-speed retrieval.
 
-Construct prompts with retrieved context
+- ✅ **Construct prompts with retrieved context**  
+  Designed dynamic prompt templates that merge retrieved chunks into the model input for accurate, contextual responses.
 
-Integrate local LLM inference end-to-end
+- ✅ **Integrate local LLM inference end-to-end**  
+  Combined embedding, retrieval, and generation modules into a unified local pipeline powered by open-source LLMs.
+
