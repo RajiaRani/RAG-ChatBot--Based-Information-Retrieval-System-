@@ -1,4 +1,4 @@
-# 🧠 RAG-ChatBot Based Information Retrieval System
+## RAG-ChatBot Based Information Retrieval System
 > A from-scratch Retrieval-Augmented Generation (RAG) pipeline to chat with large PDFs — privacy-first, fast, and fully customizable.
 
 <p align="left">
@@ -9,7 +9,7 @@
 
 ---
 
-## 📌 Overview
+## Overview
 This project implements a **RAG pipeline** that lets you upload a PDF, ask questions, and get **grounded, citation-backed answers** from a **local or cloud-based LLM**.  
 
 Unlike frameworks such as **LangChain** or **LlamaIndex**, this repo **builds each piece from scratch**, helping you understand:
@@ -22,18 +22,18 @@ Privacy 🔒 | Speed ⚡ | Zero recurring cost 💸
 
 ---
 
-## ✨ Features
-- 📄 **PDF ingestion** (any document or textbook)
-- 🧱 **Chunking:** Fixed, Semantic, Structural
-- 🧮 **Embeddings:** via OpenAI or local models
-- 🔎 **Vector Search:** Cosine similarity (FAISS / Chroma / Supabase)
-- 💬 **Chat Interface:** Streamlit / Flask
-- 📚 **Citations:** Source text + page numbers
-- 🧪 **Transparent Architecture:** Every step is visible and customizable
+## Features
+- **PDF ingestion** (any document or textbook)
+- **Chunking:** Fixed, Semantic, Structural
+- **Embeddings:** via OpenAI or local models
+- **Vector Search:** Cosine similarity (FAISS / Chroma / Supabase)
+- **Chat Interface:** Streamlit / Flask
+- **Citations:** Source text + page numbers
+- **Transparent Architecture:** Every step is visible and customizable
 
 ---
 
-## 🧭 Architecture
+## Architecture
 
 The RAG pipeline follows a modular design connecting document ingestion, embedding, retrieval, and generation:
 
@@ -42,21 +42,23 @@ The RAG pipeline follows a modular design connecting document ingestion, embeddi
 </p>
 
 **Workflow Steps:**
-1️⃣ Document ingestion → text chunking  
-2️⃣ Embedding creation (OpenAI / Hugging Face)  
-3️⃣ Vector storage in Supabase / FAISS  
-4️⃣ Retrieval based on semantic similarity  
-5️⃣ Context-augmented prompt construction  
-6️⃣ Response generation via LLM  
-7️⃣ Citation + source display in UI
-
+<ol>
+<li> Document ingestion → text chunking</li> 
+<li> Embedding creation (OpenAI / Hugging Face)</li>
+<li> Vector storage in Supabase / FAISS</li>
+<li> Retrieval based on semantic similarity</li> 
+<li> Context-augmented prompt construction</li>  
+<li> Response generation via LLM</li> 
+<li> Citation + source display in UI</li>
+</ol>
 ---
-## ☁️ Deployment & Infrastructure
+
+### Deployment & Infrastructure
 
 This project runs on **Google Cloud**, with embeddings powered by **OpenAI**, models from **Hugging Face**, and backend storage via **Supabase**.  
 Frontend is being developed on **Lovable**, and the **production link** will be added soon.
 
-### 🧩 Stack at a Glance
+### Stack at a Glance
 | Layer | Service / Tool |
 |-------|----------------|
 | Compute | Google Cloud (Compute Engine / Cloud Run) |
@@ -68,7 +70,7 @@ Frontend is being developed on **Lovable**, and the **production link** will be 
 
 ---
 
-## 🔑 Environment Setup
+## Environment Setup
 
 Create a `.env` file in your root directory:
 
@@ -101,19 +103,18 @@ CLIENT_URL=https://<your-lovable-app>.com
 
 ---
 
-##  🧰 Tech Stack
+##  Tech Stack
 
-- 🐍 **Python**, **PyTorch**, **Transformers**
-- 🧮 **FAISS / Chroma / Supabase (pgvector)**
-- 🧠 **OpenAI** (Embeddings)
-- 🤗 **Hugging Face Models** (LLMs)
-- ⚙️ **Streamlit / Flask** (UI)
-- ☁️ **Google Cloud + Supabase**
-- 💻 **Lovable Frontend** *(coming soon)*
+- **Python**, **PyTorch**, **Transformers**
+- **FAISS / Chroma / Supabase (pgvector)**
+- **OpenAI** (Embeddings)
+- **Hugging Face Models** (LLMs)
+- **Streamlit / Flask** (UI)
+- **Google Cloud + Supabase**
+- **Lovable Frontend** *(coming soon)*
 
 ---
-
-## 🚀 Quickstart
+### Quickstart
 
 > **Requirements:** Python 3.10+, GPU optional but recommended
 
